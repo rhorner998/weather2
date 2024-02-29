@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <section id="search-section">
+            <form id="search-form">
+                <label for="city-input">Enter a city:</label>
+                <input type="text" id="city-input" name="city" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        
+        <section id="current-weather-section">
+            <h2>Current Weather</h2>
+            <div id="current-weather">
+                <!-- Current weather will be dynamically inserted here -->
+            </div>
+        </section>
+        
+        <section id="forecast-section">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast">
+                <!-- 5-day forecast will be dynamically inserted here -->
+            </div>
+        </section>
+        
+        <section id="history-section">
+            <h2>Search History</h2>
+            <ul id="search-history">
+                <!-- Search history will be dynamically inserted here -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

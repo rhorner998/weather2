@@ -1,0 +1,93 @@
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Styling for the header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Styling for the search form */
+#search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the weather display and forecast */
+#current-weather, #forecast {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+#forecast > div {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+#forecast > div:last-child {
+    border-bottom: none;
+}
+
+/* Styling for search history */
+#search-history {
+    margin-top: 20px;
+}
+
+#search-history button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #e7e7e7;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#search-history button:hover {
+    background-color: #d7d7d7;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    #city-input {
+        width: calc(100% - 90px);
+    }
+    
+    #search-form button {
+        width: 70px;
+    }
+}
